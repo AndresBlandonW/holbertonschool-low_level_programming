@@ -10,7 +10,7 @@ int main(void)
 char ar;
 ar = 122;
 
-while  (ar < 97)
+while  (ar > 96)
 {
 putchar(ar);
 ar--;
