@@ -12,10 +12,17 @@ int tabla;
 
 for (x = 0; x <= 9; x++)
 {
-for (tabla = 0; tabla <= 9; tabla++)
+
+_putchar('0')
+
+for (tabla = 1; tabla <= 9; tabla++)
 {
+_putchar(',');
+_putchar(' ');
 _putchar((x * tabla) + '0');
 }
+
+_putchar('\n');
 }
 
 }
