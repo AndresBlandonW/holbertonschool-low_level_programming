@@ -13,7 +13,7 @@ int tabla;
 for (x = 0; x <= 9; x++)
 {
 
-_putchar('0')
+  _putchar('0');
 
 for (tabla = 1; tabla <= 9; tabla++)
 {
