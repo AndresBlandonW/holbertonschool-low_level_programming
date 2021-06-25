@@ -25,7 +25,10 @@ printf("%d", x);
 if (x == 100)
 printf("\n");
 
+if (x != 100)
+{
 printf(" ");
+}
 
 }
 
