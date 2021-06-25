@@ -18,7 +18,7 @@ for (c = 1; c <= n; c++)
 
 _putchar('\\');
 _putchar('\n');
- 
+
 for (es = 0; es < c; es++)
 {
 _putchar(' ');
