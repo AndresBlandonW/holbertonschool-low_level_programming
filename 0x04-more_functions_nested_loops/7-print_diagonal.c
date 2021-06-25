@@ -17,10 +17,11 @@ if (n > 0)
 for (c = 0; c <= n; c++)
 {
 _putchar(x);
+_putchar('\n');
 }
 
 }
-
+else
 _putchar('\n');
 
 }
