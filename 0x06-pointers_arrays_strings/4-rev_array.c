@@ -13,7 +13,7 @@ int start;
 int rev;
 
 
- for (start = 0; start < n / 2; start++, i--)
+for (start = 0; start < n / 2; start++, i--)
 {
 rev = a[start];
 a[start] = a[i];
