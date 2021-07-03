@@ -43,9 +43,9 @@ else
 lar = len_s2;
 }
 
-while (lar > i)
+while (i < lar)
 {
-if (s1[0] == s2[0])
+if (s1[i] == s2[i])
 {
 i++;
 }
