@@ -31,6 +31,9 @@ int i, j, k;
 int can = 0;
 int len_n = _strlen(needle);
 
+if (needle[0] == '\0')
+return (&haystack[0]);
+
 for (i = 0; haystack[i] != '\0'; i++)
 {
 if (haystack[i] == needle[0])
