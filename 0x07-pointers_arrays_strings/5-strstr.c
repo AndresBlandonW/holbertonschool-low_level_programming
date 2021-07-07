@@ -1,23 +1,6 @@
 #include "holberton.h"
 
 /**
- * _strlen - length of string
- * @s: string
- *
- * Return: length
- */
-int _strlen(char *s)
-{
-int len = 0;
-
-while (*(s + len) != 0)
-{
-len++;
-}
-return (len);
-}
-
-/**
  * _strstr -  searches a string for any
  * @haystack: string
  * @needle: data
@@ -26,37 +9,25 @@ return (len);
 
 char *_strstr(char *haystack, char *needle)
 {
+unsigned int i = 0, j = 0;
 
-int i, j, k;
-int can = 0;
-int len_n = _strlen(needle);
-
-if (needle[0] == '\0')
-return (&haystack[0]);
-
-for (i = 0; haystack[i] != '\0'; i++)
+while (haystack[i])
 {
-if (haystack[i] == needle[0])
+while (needle[j] && (haystack[i] == needle[0]))
 {
-for (j = 0; needle[j] != '\0'; j++)
-{
-if (haystack[i] == needle[j])
+if (haystack[i + j] == needle[j])
+j++;
+else
+break;
+}
+if (needle[j])
 {
 i++;
-can++;
+j = 0;
 }
-}
-
-if (can == len_n)
-{
-for (k = i - len_n; haystack[k] != '\0'; k++)
-{
-return (&haystack[k]);
-}
-}
-}
+else
+return (haystack + i);
 }
 
-return ('\0');
-
+return (0);
 }
