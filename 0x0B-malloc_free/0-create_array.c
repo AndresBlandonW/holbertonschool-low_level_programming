@@ -29,6 +29,7 @@ for (i = 0; i < size; i++)
 {
 array[i] = c;
 }
+array[i] = '\n';
 
 return (array);
 
