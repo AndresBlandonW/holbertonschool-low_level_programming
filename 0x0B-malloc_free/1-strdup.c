@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+int _strlen(char *s);
 
 /**
 * _strlen - return the length
