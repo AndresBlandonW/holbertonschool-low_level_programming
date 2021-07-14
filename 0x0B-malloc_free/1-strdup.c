@@ -42,6 +42,11 @@ if (str == NULL)
 return (NULL);
 }
 
+if (cpy == NULL)
+{
+return (NULL);
+}
+
 while (str[i] != '\0')
 {
 cpy[i] = str[i];
