@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdlib.h>
+0;136;0c#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -17,6 +17,11 @@ char *array;
 unsigned int i;
 
 if (size == 0)
+{
+return (NULL);
+}
+
+if (array == NULL)
 {
 return (NULL);
 }
