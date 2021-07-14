@@ -19,21 +19,18 @@ if (size == 0)
 {
 return (NULL);
 }
-
-if (array == NULL)
+else if (array == NULL)
 {
 return (NULL);
 }
 else
 {
 array = malloc(sizeof(c) * size);
-array[0] = c;
 
 for (i = 0; i < size; i++)
 {
 array[i] = c;
 }
-array[i] = '\n';
 
 return (array);
 
