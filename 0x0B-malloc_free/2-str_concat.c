@@ -46,13 +46,10 @@ sizes2 = 0;
 else
 sizes2 = _strlen(s2);
 
-
 cstr = (char *) malloc(sizeof(char) * (sizes1 + sizes2 + 1));
 
 if (cstr == NULL)
-{
 return (NULL);
-}
 
 if (sizes1 > 0)
 {
@@ -63,6 +60,13 @@ i++;
 }
 }
 
+if (sizes2 > 0)
+{
+for (; s2[j] != '\0'; i++, j++)
+{
+cstr[i] = s2[j];
+}
+}
 cstr[i] = '\0';
 
 return (cstr);
