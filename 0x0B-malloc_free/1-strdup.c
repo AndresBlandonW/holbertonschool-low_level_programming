@@ -27,11 +27,16 @@ i++;
 i++;
 cpy = malloc(sizeof(char) * i);
 
+if (cpy == NULL)
+{
+return (NULL);
+}
+
 for (i = 0; str[i] != 0; i++)
 {
 cpy[i] = str[i];
 }
-	
+
 cpy[i] = 0;
 
 return (cpy);
