@@ -36,8 +36,16 @@ char *cstr;
 int sizes1, sizes2;
 int i = 0, j = 0;
 
+if (s1 == NULL)
+sizes1 = 0;
+else
 sizes1 = _strlen(s1);
+
+if (s2 == NULL)
+sizes2 = 0;
+else
 sizes2 = _strlen(s2);
+
 
 cstr = (char *) malloc(sizeof(char) * (sizes1 + sizes2 + 1));
 
