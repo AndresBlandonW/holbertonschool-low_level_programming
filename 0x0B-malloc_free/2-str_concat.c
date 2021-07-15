@@ -41,17 +41,23 @@ sizes2 = _strlen(s2);
 
 cstr = (char *) malloc(sizeof(char) * (sizes1 + sizes2 + 1));
 
-while (s2[j] != '\0')
+if (sizes1 > 0)
 {
 while (s1[i] != '\0' && i < sizes1)
 {
 cstr[i] = s1[i];
 i++;
 }
+}
 
+if (sizes2 > 0)
+{
+while (s2[j] != '\0')
+{
 cstr[i] = s2[j];
 i++;
 j++;
+}
 }
 cstr[i] = '\0';
 
