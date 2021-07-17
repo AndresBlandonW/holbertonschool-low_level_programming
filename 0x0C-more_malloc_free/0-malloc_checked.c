@@ -3,8 +3,8 @@
 
 /**
  * malloc_checked - allocates memory u
- * @b - value
- *
+ * @b: value
+ * Return: data
  */
 
 void *malloc_checked(unsigned int b)
