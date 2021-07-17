@@ -50,7 +50,7 @@ sizes2 = 0;
 if (n <= sizes2)
 sizes2 = n;
 
-cstr = (char *) malloc(sizeof(char) * (sizes1 + sizes2 + 1));
+cstr = malloc(sizeof(char) * (sizes1 + sizes2 + 1));
 
 if (cstr == NULL)
 return (NULL);
