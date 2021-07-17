@@ -38,14 +38,14 @@ char *cstr;
 unsigned int sizes1, sizes2;
 unsigned int i = 0, j = 0;
 
-sizes1 = _strlen(s1);
-sizes2 = _strlen(s2);
-
 if (s1 == NULL)
-sizes1 = 0;
+s1 = "";
 
 if (s2 == NULL)
-sizes2 = 0;
+s2 = "";
+
+sizes1 = _strlen(s1);
+sizes2 = _strlen(s2);
 
 if (n <= sizes2)
 sizes2 = n;
