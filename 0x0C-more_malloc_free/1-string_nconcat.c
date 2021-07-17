@@ -47,7 +47,7 @@ sizes1 = 0;
 if (s2 == NULL)
 sizes2 = 0;
 
-if (n < sizes2 && sizes2 > 0)
+if (n <= sizes2)
 sizes2 = n;
 
 cstr = (char *) malloc(sizeof(char) * (sizes1 + sizes2 + 1));
