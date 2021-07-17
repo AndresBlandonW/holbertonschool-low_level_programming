@@ -64,6 +64,7 @@ i++;
 }
 }
 
+if (sizes2 > 0)
 for (; j < sizes2; i++, j++)
 {
 cstr[i] = s2[j];
