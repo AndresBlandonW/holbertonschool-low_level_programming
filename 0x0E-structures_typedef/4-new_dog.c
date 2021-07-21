@@ -22,6 +22,11 @@ if (d == NULL)
 return (NULL);
 
 d->name = _strdup(name);
+if (!d->name)
+{
+free(d);
+return (NULL);
+}
 d->age = age;
 d->owner = _strdup(owner);
 if (d->owner == NULL)
