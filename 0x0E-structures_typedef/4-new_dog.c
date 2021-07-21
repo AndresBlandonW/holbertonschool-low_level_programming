@@ -27,9 +27,10 @@ if (!d->name)
 free(d);
 return (NULL);
 }
+
 d->age = age;
 d->owner = _strdup(owner);
-if (d->owner == NULL)
+if (!d->owner)
 {
 free(d->name);
 free(d);
