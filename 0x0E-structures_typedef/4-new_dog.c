@@ -20,7 +20,6 @@ d = malloc(sizeof(dog_t));
 
 if (d == NULL)
 {
-free(d);
 return (NULL);
 }
 d->name = _strdup(name);
@@ -68,6 +67,9 @@ i++;
 
 i++;
 cpy = malloc(sizeof(char) * i);
+
+if (cpy == NULL)
+return (NULL);
 
 for (i = 0; str[i] != 0; i++)
 {
