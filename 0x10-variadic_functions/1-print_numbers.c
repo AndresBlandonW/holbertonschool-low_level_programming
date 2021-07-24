@@ -22,7 +22,7 @@ for (i = 0; i < n; i++)
 printf("%d", va_arg(pn, int));
 
 if (i + 1 != n)
-printf(separator);
+printf("%s", separator);
 }
 va_end(pn);
 
