@@ -1,7 +1,5 @@
 #include "lists.h"
-#include <string.h>
-#include <stdarg.h>
-
+#include <unistd.h>
 /**
  * print_list - prints all ele of list_t
  * @h: pointer of struct
