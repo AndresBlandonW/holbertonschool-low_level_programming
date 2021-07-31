@@ -14,8 +14,9 @@ list_t *tmp;
 while (head != NULL)
 {
 tmp = head;
-head = head->str;
-head = head->next;
+tmp = head->next;
+free(head->str);
+free(head);
 free(tmp);
 }
 
