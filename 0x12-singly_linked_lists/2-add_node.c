@@ -33,21 +33,14 @@ list_t *add_node(list_t **head, const char *str)
 {
 
 list_t *newNode = malloc(sizeof(list_t));
+
+if (newNode == NULL)
+return (NULL);
+
 newNode->str = strdup(str);
 newNode->len = _strlen(str);
-newNode->next = NULL;
-
-if (*head == NULL)
+newNode->next = *head;
 *head = newNode;
-else
-{
-list_t *lastNode = *head;
-while (lastNode->next != NULL)
-{
-lastNode = lastNode->next;
-}
-lastNode->next = newNode;
-}
 
 return (newNode);
 }
