@@ -15,8 +15,7 @@ while (tmp)
 {
 tmp = tmp->next;
 free(head);
+head = tmp;
 }
-free(tmp);
-
 
 }
