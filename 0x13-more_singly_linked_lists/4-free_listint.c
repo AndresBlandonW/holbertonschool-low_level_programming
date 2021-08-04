@@ -14,7 +14,6 @@ tmp = head;
 while (tmp)
 {
 tmp = tmp->next;
-free(head->n);
 free(head);
 }
 free(tmp);
