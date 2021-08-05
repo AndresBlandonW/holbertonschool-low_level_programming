@@ -23,8 +23,8 @@ if (current == NULL)
 return (NULL);
 }
 
-count++;
 current = current->next;
+count++;
 }
 
 return (current);
