@@ -1,5 +1,6 @@
 #include "main.h"
 
+int _strlen(char *s);
 /**
  * create_file - function that creates a file.
  * @filename: file
@@ -23,9 +24,7 @@ return (-1);
 if (text_content == NULL)
 text_content = "";
 
-for (can = 0; *text_content++; can++)
-;
-
+can = _strlen(text_content);
 wr = write(fd, text_content, can);
 if (wr == -1)
 return (-1);
@@ -34,3 +33,19 @@ close(fd);
 
 return (1);
 }
+
+/**
+ * _strlen - length of string
+ * @s: string
+ *
+ * Return: length
+ */
+int _strlen(char *s)
+{
+int len = 0;
+
+while (*(s + len) != 0)
+{
+len++;
+}
+return (len);
