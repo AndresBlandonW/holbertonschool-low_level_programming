@@ -16,7 +16,7 @@ int can;
 if (filename == NULL)
 return (-1);
 
-fd = open(filename, O_CREAT | O_RDWR);
+fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 if (fd == -1)
 return (-1);
 
