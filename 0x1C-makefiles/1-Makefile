@@ -1,5 +1,5 @@
 CC = gcc
-SRC = main.o school.o m.h
+SRC = main.o school.o
 
 all: school
 
