@@ -7,9 +7,7 @@ RM = rm -f
 .c.o:
 	$(CC) 	-c -o $@ $<
 
-all: $(NAME)
-
-$(NAME): $(OBJ)
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
